@@ -1,0 +1,19 @@
+{
+  "name": "Free Bloomberg",
+  "version": "1.06",
+  "description": "Matt's Free Bloomberg Extension!",
+  "permissions": [
+      "activeTab"
+    ],
+  "content_scripts": [
+     {
+        "matches": [ "https://*.bloomberg.com/*" ],
+        "js": [ "content.js" ],
+        "run_at": "document_idle"
+     }
+  ],
+"icons": { "16": "images/icon16.png",
+           "48": "images/icon48.png",
+          "128": "images/icon128.png" },
+  "manifest_version": 3
+}
